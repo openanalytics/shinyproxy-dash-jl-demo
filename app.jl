@@ -1,7 +1,6 @@
 using Dash
 
 app = dash(
-    # url_base_pathname = ENV["SHINYPROXY_PUBLIC_PATH"],
     requests_pathname_prefix = ENV["SHINYPROXY_PUBLIC_PATH"],
     routes_pathname_prefix = ENV["SHINYPROXY_PUBLIC_PATH"],
 )
