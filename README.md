@@ -1,4 +1,4 @@
-# Running Dash.jl for Python apps in ShinyProxy
+# Running Dash.jl (Dash for Julia) apps in ShinyProxy
 
 This repository describes how to add a Dash.jl app inside ShinyProxy.
 
