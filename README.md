@@ -23,7 +23,8 @@ sudo docker build -t openanalytics/shinyproxy-dash-jl-demo .
 **Note:** ShinyProxy 3.0.2 or later is required for running Dash.jl apps.
 
 To add the Dash.jl application to ShinyProxy add the following lines to its configuration file (see [application.yml](./application.yml) for a complete file):
-```
+
+```yaml
 specs:
   - id: dash-jl-demo
     display-name: Dash.jl Application
