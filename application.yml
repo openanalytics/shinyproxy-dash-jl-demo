@@ -12,9 +12,9 @@ proxy:
       password: password
   specs:
     - id: dash-jl-demo
-      display-name: Dash Demo Application
-      port: 8050
+      display-name: Dash.jl Application
       container-image: openanalytics/shinyproxy-dash-jl-demo
+      port: 8080
       target-path: "#{proxy.getRuntimeValue('SHINYPROXY_PUBLIC_PATH')}"
 logging:
   file:
