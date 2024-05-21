@@ -25,15 +25,16 @@ sudo docker build -t openanalytics/shinyproxy-dash-jl-demo .
 To add the Dash.jl application to ShinyProxy add the following lines to its configuration file (see [application.yml](./application.yml) for a complete file):
 
 ```yaml
-specs:
-  - id: dash-jl-demo
-    display-name: Dash.jl Application
-    container-image: openanalytics/shinyproxy-dash-jl-demo
-    port: 8080
-    target-path: "#{proxy.getRuntimeValue('SHINYPROXY_PUBLIC_PATH')}"
+proxy:
+  specs:
+    - id: dash-jl-demo
+      display-name: Dash.jl Application
+      container-image: openanalytics/shinyproxy-dash-jl-demo
+      port: 8050
+      target-path: "#{proxy.getRuntimeValue('SHINYPROXY_PUBLIC_PATH')}"
 ```
 
-# References
+## References
 * https://docs.juliahub.com/Dash/oXkBb/1.1.1/#Basic-application
 
 
